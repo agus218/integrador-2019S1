@@ -5,19 +5,14 @@ import org.testng.annotations.BeforeTest;
 import static org.testng.Assert.*;
 
 public class AgenciaDeViajesTest {
-
-    private PaquetePatagonia paquetePatagonia;
-    private PaqueteCuyo paqueteCuyo;
-    private PaqueteNOA paqueteNOA;
-    private AgenciaDeViajes agenciaDeViajes;
-
-
+    AgenciaDeViajes agenciaDeViajes;
     @BeforeTest
     public void setup() {
-        paquetePatagonia = new PaquetePatagonia();
-        paqueteCuyo = new PaqueteCuyo();
-        paqueteNOA = new PaqueteNOA();
-        agenciaDeViajes = new AgenciaDeViajes(paqueteCuyo, paqueteNOA, paquetePatagonia);
+        Paquete paquetePatagonia = new PaquetePatagonia();
+        Paquete paqueteCuyo = new PaqueteCuyo();
+        Paquete paqueteNOA = new PaqueteNOA();
+        agenciaDeViajes = new AgenciaDeViajes();
+
     }
 
     @org.testng.annotations.Test

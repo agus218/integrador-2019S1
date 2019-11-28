@@ -13,17 +13,16 @@ public class AutomotrizTest {
     private List<Motor> motores;
     private Automotriz automotriz;
 
-
     @BeforeMethod
     public void setUp() {
-        MotorCarburador motorCarburador = new MotorCarburador();
-        MotorInyeccion motorInyeccion = new MotorInyeccion();
-        MotorExperimental motorExperimental = new MotorExperimental();
+        Motor motorCarburador = new MotorCarburador();
+        Motor motorInyeccion = new MotorInyeccion();
+        Motor motorExperimental = new MotorExperimentalAdapter(new MotorExperimental());
         motores = new ArrayList<Motor>();
         motores.add(motorCarburador);
         motores.add(motorInyeccion);
+        motores.add(motorExperimental);
         automotriz = new Automotriz();
-        //motores.add(motorExperimental); NO compila,
     }
 
     @Test

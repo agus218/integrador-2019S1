@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class PaqueteNOA {
+public class PaqueteNOA extends Paquete {
 
     public void itinerario() {
         print("Nombre: " + nombre());
@@ -38,5 +38,10 @@ public class PaqueteNOA {
 
     private void print(String texto) {
         System.out.println(texto);
+    }
+
+    @Override
+    public void iterador() {
+        this.itinerario();
     }
 }

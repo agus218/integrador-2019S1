@@ -1,7 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class PaqueteCuyo {
-
+public class PaqueteCuyo extends Paquete{
 
     public String getNombre() {
         return "Paquete Cuyo";
@@ -41,4 +40,8 @@ public class PaqueteCuyo {
         return "Traslado desde el hotel San Martin al aeropuerto de Mendoza";
     }
 
+    @Override
+    public void iterador() {
+        this.imprimirItinerario();
+    }
 }

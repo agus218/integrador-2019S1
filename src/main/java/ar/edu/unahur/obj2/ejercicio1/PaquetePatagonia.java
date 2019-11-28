@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class PaquetePatagonia {
+public class PaquetePatagonia extends Paquete{
 
 
     public void getItinerario() {
@@ -14,5 +14,10 @@ public class PaquetePatagonia {
 
     private void print(String texto) {
         System.out.println(texto);
+    }
+
+    @Override
+    public void iterador() {
+        this.getItinerario();
     }
 }

@@ -14,9 +14,9 @@ public class VendedorTest {
 
     @BeforeMethod
     public void setUp() {
-        principiante = new Vendedor("PRINCIPIANTE");
-        senior = new Vendedor("SENIOR");
-        experto = new Vendedor("EXPERTO");
+        principiante = new Principiante();
+        senior = new Senior();
+        experto = new Experto();
     }
 
     @Test
